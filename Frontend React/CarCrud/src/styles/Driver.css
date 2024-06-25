@@ -1,0 +1,95 @@
+.DriverFormContainer {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+form {
+    margin: 10px 0;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+
+
+.driver-table {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.driver-table-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.driver-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.driver-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.driver-name {
+    text-align: left;
+}
+
+.driver-contact {
+    text-align: center;
+}
+
+.driver-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.DriverFilterForm {
+    margin-bottom: 20px;
+}
+
+.DriverFilterForm h3 {
+    margin: 10px 0;
+}
+
+.DriverFilterForm button {
+    margin: 5px 0;
+}

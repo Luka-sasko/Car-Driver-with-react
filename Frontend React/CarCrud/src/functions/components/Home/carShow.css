@@ -1,0 +1,45 @@
+.car-table {
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+  
+  .car-table-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  
+  
+  
+  .car-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .car-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    align-items: center;
+    margin-left: 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .car-brand-model {
+    text-align: left;
+    margin-left: 5%;
+  }
+  
+  .car-year {
+    text-align: center;
+    margin-right : 30%;
+  }
+  
+  .car-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+ 

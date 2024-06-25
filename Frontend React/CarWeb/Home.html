@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Car</title>
+    <script src="functions/Home.js"></script>
+    <link rel="stylesheet" href="styles/Home.css">
+</head>
+
+
+<body>
+
+<div>
+    <h3>List of cars:</h3>
+    <button type="button" onclick="ShowAllCars()">Show cars</button>
+    <button type="button" onclick="HideAllCars()">Hide cars</button><br><br>
+    <p id="carList">Cars List:</p>
+</div>
+
+<div>
+    <h3>Add new car here:</h3>
+    <form id="carForm">
+
+        <label for="id">Id:</label><br>
+        <input type="text" id="id" name="Id"><br><br>
+
+        <label for="brand">Brand:</label><br>
+        <input type="text" id="brand" name="Brand"><br><br>
+        
+        <label for="model">Model:</label><br>
+        <input type="text" id="model" name="Model"><br><br>
+        
+        <label for="manufactureYear">Manufacture Year:</label><br>
+        <input type="number" id="manufactureYear" name="ManufactureYear"><br><br>
+        
+        <button type="button" onclick="AddCar()">Add car</button><br><br>
+        
+    </form>
+</div>
+
+</body>
+
+
+</html>

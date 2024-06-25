@@ -1,0 +1,52 @@
+.driver-show-home {
+    margin: 20px auto;
+    max-width: 100%;
+  }
+  
+  .driver-show-home h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .driver-show-home-buttons {
+    margin-bottom: 10px;
+  }
+  
+  .driver-table-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .driver-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .driver-table th,
+  .driver-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+ 
+  .driver-table td {
+    vertical-align: middle;
+  }
+  
+  .driver-table button {
+    padding: 8px 16px;
+    margin-right: 5px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .driver-table button:hover {
+    background-color: #218838;
+  }
+  

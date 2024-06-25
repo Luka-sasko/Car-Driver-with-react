@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Car update</title>
+    <script src="functions/Update.js"></script>
+    <link rel="stylesheet" href="styles/Update.css">
+</head>
+
+
+<body>
+<nav>
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a class="active" href="Update.html">Update</a></li>
+    </ul>
+</nav>
+
+<div>
+    <h3>Update car here:</h3>
+    <form id="carForm">
+
+        <label for="brandUpdate">Brand:</label><br>
+        <input type="text" id="brandUpdate" name="BrandUpdate"><br><br>
+
+        <label for="modelUpdate">Model:</label><br>
+        <input type="text" id="modelUpdate" name="ModelUpdate"><br><br>
+
+        <label for="manufactureYearUpdate">Manufacture Year:</label><br>
+        <input type="number" id="manufactureYearUpdate" name="ManufactureYearUpdate"><br><br>
+
+        <button type="button" onclick="UpdateCar()">Update car</button><br><br>
+    </form>
+</div>
+
+</body>
+
+
+</html>

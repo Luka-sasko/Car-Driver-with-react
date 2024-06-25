@@ -1,0 +1,37 @@
+.car-drivers-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .car-drivers-container h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .car-drivers-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .car-driver-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .car-driver-item div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .car-driver-item strong {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
