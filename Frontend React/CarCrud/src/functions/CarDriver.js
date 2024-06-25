@@ -12,7 +12,7 @@ function CarDriver() {
   const [sortOption, setSortOption] = useState('driverFirstName');
   const [carDriver, setCarDriver] = useState({ carId: '', driverId: '' });
   const [carDrivers, setCarDrivers] = useState([]);
-  const [totalCarDrivers, setTotalCarDrivers] = useState(0);
+  const [totalCarDrivers, setTotalCarDrivers] = useState([]);
 
   const [pageNumber, setPageNumber] = useState(1);
   const [pageSize, setPageSize] = useState(5);
@@ -29,19 +29,21 @@ function CarDriver() {
 
   const filterRef = useRef(null);
 
-  const fetchCarDrivers = useCallback(async () => {
-    try {
-      const response = await axios.get('https://localhost:44376/api/cardriver');
-      setTotalCarDrivers(response.data.length);
-      getFilteredCarDrivers(filters);
-    } catch (error) {
-      console.error('Error fetching car drivers:', error);
-    }
-  }, [filters]);
 
   useEffect(() => {
-    fetchCarDrivers();
-  }, [fetchCarDrivers, sortOption, pageNumber, pageSize]);
+    const fetchCarDrivers = async () => {
+      try {
+        const response = await axios.get('https://localhost:44376/api/cardriver');
+        setTotalCarDrivers(response.data);
+
+        getFilteredCarDrivers(filters);
+
+      } catch (error) {
+        console.error('Error fetching car drivers:', error);
+      }
+    };
+      fetchCarDrivers();
+  }, [sortOption, pageNumber, pageSize,filters]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -87,7 +89,6 @@ function CarDriver() {
       queryParams.append('PageNumber', pageNumber);
       queryParams.append('PageSize', pageSize);
       const url = `https://localhost:44376/api/cardriver?${queryParams.toString()}`;
-      console.log(URL);
       const response = await axios.get(url);
       setCarDrivers(response.data);
     } catch (error) {
@@ -121,7 +122,6 @@ function CarDriver() {
   const handlePageSizeChange = (newPageSize) => {
     setPageSize(newPageSize);
     setPageNumber(1);
-
   };
 
   return (
@@ -148,7 +148,7 @@ function CarDriver() {
       <CarDriverPaging
         pageNumber={pageNumber}
         pageSize={pageSize}
-        totalItems={totalCarDrivers}
+        totalItems={totalCarDrivers.length}
         onPageChange={handlePageChange}
         onPageSizeChange={handlePageSizeChange}
       />

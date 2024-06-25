@@ -1,7 +1,7 @@
 import React from 'react';
 import './Paging.css';
 
-const Paging = ({ pageNumber, pageSize, totalItems, onPageChange, onPageSizeChange, cars = [] }) => {
+const Paging = ({ pageNumber, pageSize, totalItems, onPageChange, onPageSizeChange}) => {
   const totalPages = pageSize > 0 ? Math.ceil(totalItems / pageSize) : 1;
 
   const handlePageSizeChange = (e) => {

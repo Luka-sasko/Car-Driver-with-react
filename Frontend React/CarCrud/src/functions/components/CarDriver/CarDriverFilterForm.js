@@ -57,14 +57,6 @@ const CarDriverFilterForm = ({ onSubmit, sortByOptions }) => {
       <h2>Filter Car Drivers</h2>
       <form onSubmit={handleSubmit}>
         <label>
-          Page Number:
-          <input type="number" name="pageNumber" value={filters.pageNumber} onChange={handleInputChange} />
-        </label>
-        <label>
-          Page Size:
-          <input type="number" name="pageSize" value={filters.pageSize} onChange={handleInputChange} />
-        </label>
-        <label>
           Driver First Name:
           <input type="text" name="FirstName" value={filters.driverFirstName} onChange={handleInputChange} ref={inputRef} />
         </label>

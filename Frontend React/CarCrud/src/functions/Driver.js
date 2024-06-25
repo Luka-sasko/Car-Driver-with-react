@@ -71,7 +71,7 @@ function Driver() {
         alert('Please fill out all fields correctly.');
         return;
       }
-      const response = await axios.post('https://localhost:44376/api/Driver', driver);
+      await axios.post('https://localhost:44376/api/Driver', driver);
       alert(`Driver added: \nFirst Name: ${driver.firstName}\nLast Name: ${driver.lastName}\nContact: ${driver.contact}`);
       getFilteredDrivers();
       setDriver({
