@@ -4,6 +4,7 @@ import Home from './functions/Home';
 import Driver from './functions/Driver';
 import Navbar from './functions/Navbar';
 import CarDriver from "./functions/CarDriver";
+import Tracking from "./functions/Tracking"
 
 import './styles/Home.css';
 import './styles/Update.css';
@@ -19,6 +20,8 @@ function App() {
           <Route path="/car" element={<Home />} />
           <Route path="/driver" element={<Driver />} />
           <Route path="/CarDriver" element={<CarDriver />} />
+          <Route path="/Tracking" element={<Tracking />} />
+
         </Routes>
       </div>
     </Router>

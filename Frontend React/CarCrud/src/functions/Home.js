@@ -192,6 +192,7 @@ function Home() {
 
   const handlePageSizeChange = (newPageSize) => {
     setPageSize(newPageSize);
+    setPageNumber(1);
   };
 
   return (

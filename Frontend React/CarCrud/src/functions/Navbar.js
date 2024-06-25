@@ -16,6 +16,11 @@ const Navbar = () => {
         <li>
           <Link to="/CarDriver">Car & Driver</Link>
         </li>
+
+        <li>
+          <Link to="/Tracking">Tracking</Link>
+        </li>
+        
       </ul>
     </nav>
   );
